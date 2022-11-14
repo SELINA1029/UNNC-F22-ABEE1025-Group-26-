@@ -85,7 +85,7 @@ def run_one_parameter_parametric(eplus_run_path, idf_path, output_dir,
 
     """
 
-    return this_output_dir + '/eplusout.csv'
+
 
     output_path = {}
     if not os.path.isdr(output_dir):
@@ -95,7 +95,7 @@ def run_one_parameter_parametric(eplus_run_path, idf_path, output_dir,
     	each_output_dir = output_dir + f"/run{turn}"
 
     	run_one_simulation_helper(eplus_run_path, idf_path, output_dir,
-	 							parameter_key, parameter_value):
+	 							parameter_key, parameter_val):
     	output_path[parameter_value] = each_output_dir + "/eplusout.csv"
 
     	turn += 1
