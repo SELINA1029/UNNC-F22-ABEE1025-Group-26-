@@ -92,7 +92,7 @@ def run_one_parameter_parametric(eplus_run_path, idf_path, output_dir,
     	os.mkdir(output_dir)
     turn = 1
     for parameter_value in parameter_vals:
-    	each_output_dir = output_dir + f"/run{time}"
+    	each_output_dir = output_dir + f"/run{turn}"
 
     	run_one_simulation_helper(eplus_run_path, idf_path, output_dir,
 	 							parameter_key, parameter_value):
